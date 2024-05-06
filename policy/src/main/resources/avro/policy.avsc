@@ -1,0 +1,30 @@
+{
+  "namespace": "com.daninavarro.policy.avro",
+  "type": "record",
+  "name": "PolicyAvro",
+  "fields": [
+    {
+      "name": "id",
+      "type": {
+        "type": "string",
+        "logicalType": "uuid"
+      }
+    },
+    {
+      "name": "policy_holder_id",
+      "type": "string"
+    },
+    {
+      "name": "product_name",
+      "type": "string"
+    },
+    {
+      "name": "premium",
+      "type": "int"
+    },
+    {
+      "name": "active",
+      "type": "boolean"
+    }
+  ]
+}
