@@ -25,7 +25,9 @@ public class PolicyRequestSubscriber {
         "PolicyRequestSubscriber#consumer, key={}, value={}",
         message.key(),
         message.value());
-    storePolicyUseCase.execute(mapper.toDomain(message.value()));
+    var policy = mapper.toDomain(message.value());
+    policy.setAsyncSetup(Boolean.TRUE);
+    storePolicyUseCase.execute(policy);
   }
 
 

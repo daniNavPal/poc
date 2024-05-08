@@ -6,10 +6,10 @@ My Goal is build a completed example where is can show my learning on the last p
  - Setup of the Relational Database as PostgresSQL and the Document database like MongoDB
  - MonoModule project for each microservice keeping hexagonal approach
    - Javers to manage AuditData
-   - Liquibase to managa database schema definition as code
+   - Liquibase to manage database schema definition as code
  - Event Driven (Kafka)
-   - Spring Apache Kafka
-   - Spring Cloud Stream
+   - Spring Apache Kafka - Policy Microservice
+   - Spring Cloud Stream - Customer Microservice
  - Observability setup with Grafana & Tempo & Loki
  - SpringCache with Caffeine
  - Redis

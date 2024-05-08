@@ -14,6 +14,7 @@ public interface PolicyMapper {
   PolicyResponse toPolicyResponse(Policy domain);
 
   @Mapping(target = "id", expression = "java(computePolicyId())")
+  @Mapping(target = "asyncSetup", constant = "false")
   Policy toPolicy(PolicyRequest dto);
 
   default UUID computePolicyId() {

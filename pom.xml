@@ -28,6 +28,11 @@
     <spring-bood-mongo.version>3.2.4</spring-bood-mongo.version>
   </properties>
 
+  <modules>
+    <module>customer</module>
+    <module>policy</module>
+  </modules>
+
   <dependencyManagement>
     <dependencies>
       <dependency>
